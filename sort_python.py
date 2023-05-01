@@ -14,11 +14,11 @@ def SortNumArray(T):
         for v in range(unfixed_size):
             if(T[v] <= _min):
                 _min = T1[v]
-                indice = v
+                index = v
         if(unfixed_size > 0):
             T2[i] = _min
             _min = _max
-            T1.pop(indice)
+            T1.pop(index)
         unfixed_size -= 1
         
     return T2
